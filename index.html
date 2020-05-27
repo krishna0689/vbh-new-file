@@ -9,10 +9,17 @@ and open the template in the editor.
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/vbhnew.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <style>
+            /* Make the image fully responsive */
+            .carousel-inner img {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
     </head>
     <body>
         <section class="contactdetails">
@@ -203,16 +210,17 @@ and open the template in the editor.
         <section id="amenities" class="color">
             <div class="container container-expand-lg">
                 <div class="halfcircle">
-                    <p class="amtext"> AMENITIES </p>
+                    <div class="halfborder1"></div>
                     <div class="row">
                         <div class="col-lg-12 col-sm-12"> 
+                            <p class="amtext"> AMENITIES </p>
                             <div class="circle location">
                                 <img src="assets/images/location.png">
-                                <div class="row col-sm-12">
-                                    <h6 class="locationtext"> GPS </h6>
-                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="row">
+                        <h4 class="locationtext"> GPS </h4>
                     </div>
                     <div class="row">
                         <div class="col-lg-6 col-sm-12">
@@ -229,14 +237,14 @@ and open the template in the editor.
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-sm-12">
-                                    <h8 class="wifitext"> WIFI </h8>
+                                    <h4 class="wifitext"> WIFI </h4>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-12">
                             <div class="row">
                                 <div class="col-lg-4 col-sm-12">
-                                    <h8 class="Blanketstext"> BLANKETS </h8>
+                                    <h4 class="Blanketstext"> BLANKETS </h4>
                                 </div>
                                 <div class="col-lg-3 col-sm-12">
                                     <div class="circle Blankets">
@@ -252,115 +260,97 @@ and open the template in the editor.
                             </div>
                         </div>
                     </div>
-                    <div class="row mb-1">
-                        <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-12">
                             <div class="row">
-                                <div class="col-lg-4">                           
+                                <div class="col-lg-4 col-sm-12">                           
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 col-sm-12">
                                     <div class="circle MobileCharger">
                                         <img src="assets/images/Mobile.png">
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
-                                    <h8 class="MobileChargertext"> MOBILE CHARGER </h8>
+                                <div class="col-lg-4 col-sm-12">
+                                    <h4 class="MobileChargertext"> MOBILE CHARGER </h4>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-sm-12">
                             <div class="half"></div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-sm-12">
                             <div class="row">
-                                <div class="col-lg-4">
-                                    <h8 class="Readinglighttext text-right"> READING LIGHT </h8>
+                                <div class="col-lg-4 col-sm-12">
+                                    <h4 class="Readinglighttext read text-right"> READING LIGHT </h4>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 col-sm-12">
                                     <div class="circle Readinglight">
                                         <img src="assets/images/light.png">
                                     </div>
-                                </div></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--Routes 
-        
-        <section id="Routes" class="bg-dark">
-            <div class="container container-expand-lg">
-                <h1 class="text-center"> <span class=""> POPULAR ROUTES </span></h1>
-                <div class="row">
-                    <div class="col-lg-4 py-5">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets/images/madras.jpg" class="img-thumbnail img" alt="image">
-                                </div>
-                                <div class="flip-box-back">
-                                    <img src="assets/images/banglore.jpg" class="img-thumbnail img" alt="image" >
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="col-lg-4 routetext">
-                        <h6 class="text-center"> Bangalore <br>
-                            <img src="assets/images/swap.png">
+        <!--Routes -->
+
+        <section id="Routes">
+            <div class="container-expand-lg text-center">  
+                <img src="assets/images/chennai.png" class="image-fluid img-responsive float-left">
+                <img src="assets/images/banglore1.png" class="image-fluid img-responsive float-right">
+                <h3 class="" style="color:black"> POPULAR ROUTES </h3>
+                <h1 class="circledot"> </h1>
+                <h1 class="circledot1"> </h1>
+                <h1 class="circledot2"> </h1>
+                <h1 class="circledot3"> </h1>
+                <h1 class="circledot4"> </h1>
+                <h1 class="circledot5"> </h1>
+                <h5 style="color:black;"> BANGALORE </h5>
+                <h1>
+                    <img src="assets/images/swap1.png">
+                </h1>
+                <h5 style="color:black;"> CHENNAI </h5>
+                <h5 style="color:black;"> BANGALORE </h5>
+                <img src="assets/images/swap1.png">
+                <h5 style="color:black;"> COIMBATORE </h5>
+            </div>
+        </section>
+
+        <!-- contact -->
+
+        <section id="contact" class="pt-2">
+            <div class="container container-expand-lg text-center">
+                <div class="row" style="color:black;">
+                    <div class="col-lg-4 py-1" style="background-color:#EAEAEA;">
+                        <h6 class="mail"> <img src="assets/images/phicon.png">  
                         </h6>
-                        <h6 class="text-center mt-1"> Chennai </h6>
-                        <div class="hr">
-        
-                        </div>
-                        <h6 class="text-center mt-1"> Bangalore <br>
-                            <img src="assets/images/swap.png">
+                        <h5> CONTACT </h5>
+                        <h6> +91 9840302664 </h4>
+                    </div>
+                    <div class="col-lg-4 py-1" style="background-color:#E2E2E2;">
+                        <h6 class="address">
+                            <img src="assets/images/locate.png"> 
+                        </h6> 
+                        <h5> ADDRESS </h5>
+                        <h6> VHB Travels,Salem-636001 </h6> 
+                    </div>
+                    <div class="col-lg-4 py-1" style="background-color:#EAEAEA;">
+                        <h6 class="mail"> <img src="assets/images/mail1.png">
                         </h6>
-                        <h6 class="text-center mt-1 pb-2"> Coimbatore </h6>
-                    </div> 
-                    <div class="col-lg-4 covai py-5">
-                        <div class="flip-box float-right">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front ">
-                                    <img src="assets/images/coimbatore.jpg" class="img-thumbnail img" alt="image">
-                                </div>
-                                <div class="flip-box-back">
-                                    <img src="assets/images/banglore.jpg" class="img-thumbnail img" alt="image" >
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
+                        <h5> MAIL</h5>
+                        <h6> vbhvivek@gmail.com </h6>
+                    </div>
+                </div>
+        </section>
+        <section class="container-fluid" style="background-color:#cc6600;">
+            <div class="row">
+                <div class="col-lg-12 foottext pb-3 pt-2">
+                    <h7 style="color:white;">Copyright@2020 Designed & Maintained by EzeeInfo Cloud Solutions</h7> 
                 </div>
             </div>
         </section>
-        
-        <!-- Footer 
-        <div class="animated"> 
-            <div class="animated flipInX">
-                <section id="footer" class="bg-warning">
-                    <div class="container container-expand-lg">
-                        <div class="row pt-4">
-                            <div class="col-lg-4 py-1">
-                                <h6 class="mail"> <img src="assets/images/phoneicon.png"> <span class="pl-3"> +91 9840302664 </span>  
-                                </h6>
-                            </div>
-                            <div class="col-lg-4 py-1">
-                                <h6 class="mail"> <img src="assets/images/mail.png"> <span class="pl-3"> vbhvivek@gmail.com </span>  
-                                </h6>
-                            </div>
-                            <div class="col-lg-4 py-1">
-                                <h6 class="address"> <img src="assets/images/location1.png"> <span class="pl-3"> VHB Travels,Salem-636001 </span>  
-                                </h6>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12 foottext pb-3 pt-2">
-                                <h8>Copyright@2020 Designed & Maintained by EzeeInfo Cloud Solutions</h8> 
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div> -->
-
     </body>
 </html>

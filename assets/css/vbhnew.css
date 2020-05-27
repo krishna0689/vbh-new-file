@@ -130,6 +130,40 @@
     }
 }
 
+
+@media (max-width: 992px) {
+    .locationtext 
+    {
+        display :none;
+    }
+}
+
+@media (max-width: 992px) {
+    .MobileChargertext
+    {
+        display :none;
+    }
+}
+@media (max-width: 992px) {
+    Readinglighttext
+    {
+        display :none;
+    }
+}
+@media (max-width: 992px) {
+    .wifitext
+    {
+        display :none;
+    }
+}
+
+@media (max-width: 992px) {
+    .Blanketstext
+    {
+        display :none;
+    }
+}
+
 .bookbg
 {
     width: 340px;
@@ -147,7 +181,6 @@
 .halfcircle
 {
     width:100%;
-    height:500px;
     background-color:#cc6600;
     border-top-left-radius: 2200px;
     border-top-right-radius:2200px;
@@ -155,16 +188,15 @@
 }
 .halfborder1
 {
-    width:300px;
-    height:300px;
-    border-top-left-radius: 100%;
-    border-top-right-radius:100%;
+    width: 49%;
+    height: 500px;
+    border-top-left-radius: 149%;
+    border-top-right-radius: 157%;
     border-bottom: 0;
-    border-top: 4px solid #fff;
+    border-top: 2px solid #fff;
     position: absolute;
-    margin-top: 190px;
-    margin-left: 140px;
-    margin-right:auto;
+    margin-top: 173px;
+    margin-left: 234px;
 }
 
 .half
@@ -178,7 +210,7 @@
     border-bottom: 0;
     margin-left:auto;
     margin-right:auto;
-    margin-top:44px;
+    margin-top:36px;
 }
 .circle
 {
@@ -214,8 +246,8 @@
 
 .locationtext
 {
-    padding-left: 36px;
-    padding-top: 33px;
+    margin-left:auto;
+    margin-right:auto;
     color: black;
     position: relative;
     font-weight: 600;
@@ -274,7 +306,7 @@
 .Blanketstext
 {
     padding-top: 56px;
-    margin-left: 88px;
+    margin-left: 48px;
     color: black;
     position: absolute;
     font-weight: 600;
@@ -303,7 +335,7 @@
 .MobileChargertext
 {
     padding-top: 49px;
-    margin-left: 9px;
+    margin-left: 47px;
     color: black;
     position: absolute;
     font-weight: 600;
@@ -332,7 +364,7 @@
 .Readinglighttext
 {
     padding-top: 56px;
-    margin-left: 10px;
+    margin-left: -13px;
     color: black;
     position: absolute;
     font-weight:600;
@@ -355,7 +387,7 @@
 }
 @media (min-width: 992px) 
 {
-    .wifi .Blankets .MobileCharger .ReadingLight .location .halfcircle .wifitext .Blanketstext .MobileChargertext .ReadingLighttext .locationtext
+    .wifi .Blankets .MobileCharger .ReadingLight .location .wifitext .Blanketstext .MobileChargertext .Readinglighttext .locationtext
     {
         margin-left:auto;
 
@@ -365,7 +397,7 @@
 
 @media (max-width: 992px) 
 {
-    .wifi .Blankets .MobileCharger .ReadingLight .location .halfcircle .wifitext .Blanketstext .MobileChargertext .ReadingLighttext .locationtext
+    .wifi .Blankets .MobileCharger .ReadingLight .location .wifitext .Blanketstext .MobileChargertext .Readinglighttext .locationtext
     {
         margin-left:auto;
         margin-right:auto;
@@ -373,6 +405,11 @@
     .halfborder1
     {
         display:none;
+    }
+
+    .half
+    {
+        display:none;    
     }
 }
 
@@ -384,6 +421,30 @@
         margin-top:0px;
     }
 }
+
+@media (max-width: 992px) 
+{
+    .abouttext
+    {
+        background-color: white;
+        opacity:90%;
+        height:auto;
+    }
+}
+
+@media (max-width: 992px) 
+{
+    .locationtext .wifitext .Blanketstext .MobileChargertext .Readinglighttext
+    {
+        display:none;
+    }
+    .read
+    {
+        display:none;    
+    }
+}
+
+
 .flip-box {
     background-color: transparent;
     width: 304px;
@@ -437,9 +498,12 @@
 .amtext
 {
     text-align: center;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 500;
+    margin-left: auto;
+    margin-right:auto;
 }
+
 .hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -694,24 +758,83 @@
     margin-left:10px;
     font-style: italic;
 }
-#slider
-{
-    position:relative;
-    background: url('../images/bus.png');
-    background-repeat: no-repeat;
-    .slider
-    {
-        position: absolute;
-        width:100%;
-        height:100%;
-        left:0;
-        top:0;
-    }
-}
-
 .color
 {
     background-color: peachpuff;    
 
+}
+.head
+{
+    color:black;
+    font-size:35px;
+    font-weight:600;
+}
+
+.routetext
+{
+    color:black;
+    font-size:30px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    position:relative;
+}
+
+.circledot
+{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #cc6600;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.circledot1
+{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #cc6600;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.circledot2
+{
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #cc6600;
+    margin-left: auto;
+    margin-right: auto;
+}
+.circledot3
+{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #cc6600;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.circledot4
+{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #cc6600;
+    margin-left: auto;
+    margin-right: auto;
+}
+.circledot5
+{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #cc6600;
+    margin-left: auto;
+    margin-right: auto;
 }
 
